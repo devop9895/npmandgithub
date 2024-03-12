@@ -1,0 +1,5 @@
+name: action example
+description: my own desc
+runs:
+  using: node16
+  main: src/index.js
