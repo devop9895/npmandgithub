@@ -1,11 +1,8 @@
 {
-  "name": "npmandgithub",
+  "name": "@devop9895/npmandgithub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/devop9895"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
