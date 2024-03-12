@@ -2,8 +2,6 @@ name: Node.js Package
 
 on:
   push:
-    branches:
-      -main
 
 jobs:
   publish-gpr:
@@ -13,9 +11,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
-          scope: '@devop9895'
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - uses: ./
